@@ -7,8 +7,8 @@ function validarFormulario(valorA, valorB) {
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-let valorA = parseFloat (document.getElementById('campoA').value);
-let valorB = parseFloat (document.getElementById('campoB').value);
+let valorA = parseFloat(document.getElementById('campoA').value);
+let valorB = parseFloat(document.getElementById('campoB').value);
 
     if (valorB == valorA) {
         alert("Não é válido pois B é igual a A!");
