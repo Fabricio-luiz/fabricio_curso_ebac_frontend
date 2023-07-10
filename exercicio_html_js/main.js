@@ -5,15 +5,19 @@ function validarFormulario(valorA, valorB) {
 }
 
 form.addEventListener('submit', function(e) {
+    let formValid
     e.preventDefault();
 
-let valorA = parseInt(document.getElementById('campoA').value);
-let valorB = parseInt(document.getElementById('campoB').value);
+const valorA = parseInt(document.getElementById('campoA').value);
+const valorB = parseInt(document.getElementById('campoB').value);
+const menssagemSucesso = `É válido, o valor B: ${valorB} é maior que o valor A: ${valorA}`;
 
-    if (valorB == valorA) {
-        alert("Não é válido pois B é igual a A!");
-    } else if (valorB > valorA) {
-        alert("É valido pois B é maior que A!");
+
+    formValid = validarFormulario(valorA, valorB)
+    if (formValid) {
+        alert(menssagemSucesso);
+    } else if (valorB == valorA) {
+        alert("Não é valido pois B é igual A!");
     } else {
         alert("Não é válido pois A é maior que B!");
     }
