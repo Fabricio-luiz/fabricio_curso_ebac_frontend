@@ -9,4 +9,4 @@ $(document).ready(function(){
         placeholder: 'xxxxx-xxx'
     })
 
-}
+})
