@@ -43,13 +43,13 @@ button {
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #1e49a5;
+    background-color: #a51e1e;
 }
 
 .success-message {
