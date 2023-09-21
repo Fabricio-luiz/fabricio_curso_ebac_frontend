@@ -1,0 +1,13 @@
+body {
+    background-color: #eceef0;
+}
+
+form{
+    max-width: 600px;
+}
+
+form label{
+    font-weight:bold;
+    font-size: 14px;
+}
+
