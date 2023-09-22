@@ -20,13 +20,17 @@ $(document).ready(function() {
             mensagem: {
                 required: true 
             },
+            aceitoTermos: {
+                required: true 
+            },
         },
 
         messages: {
             nome:'<span class="message-error">Por favor, insira seu nome</span>',
-            email:'<span class="message-error">Este campo é obrigatório</span>',
-            telefone:'<span class="message-error">Este campo é obrigatório</span>',
+            email:'<span class="message-error">Por favor, insira seu e-mail</span>',
+            telefone:'<span class="message-error">Por favor, insira seu telefone</span>',
             mensagem: '<span class="message-error">Este campo é obrigatório</span>',
+            aceitoTermos:'<span class="message-error">Este campo é obrigatório</span>',
         },
         submitHandler: function(form) {
             alert('Formulário cadastrado')
