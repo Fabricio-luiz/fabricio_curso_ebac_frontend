@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Bootstrap avançado - Mod.13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/css_cdn_5.2.0_dist_bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- INÍCIO cabeçalho-->
+    <header id="cabecalho">
+            <div class="navbar navbar-expand-lg">
+                <div class="container">
+                    <img class="logo-loja" src="./imagens/Logo _loja.png" alt="Imagem logo da loja"/>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                        <ul class="nav nav-pills navbar-nav">
+                            <li class="nav item">
+                                <a class="nav-link active" href="#sobre">Sobre a loja</a>
+                            </li>
+                            <li class="nav item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav item">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+    <!-- FIM cabeçalho-->
+
+        <!-- INICIO Carousel alternativo
+        <div class="container-fluid">
+            <div id="bannerSlide" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#bannerSlide" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#bannerSlide" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#bannerSlide" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" data-bs-interval="2000">
+                    <div class="carousel-item active">
+                        <img src="./imagens/banner_loja_1.jpg" class="d-block w-100" alt="Loja 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./imagens/banner_loja_2.jpg" class="d-block w-100" alt="Loja 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./imagens/banner_loja_3.jpg" class="d-block w-100" alt="Loja 3">
+                    </div>
+                </div>
+                <a href="#bannerSlide" class="carousel-control-prev" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#bannerSlide" class="carousel-control-next" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        FIM Carousel alternativo-->
+
+        <!-- INÍCIO slide carousel--> <!--Revisar classe carousel-fade -->
+        <div class="container-fluid">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel-banner-home">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./imagens/banner_loja_1.jpg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./imagens/banner_loja_2.jpg" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="d-block w-100" src="./imagens/banner_loja_3.jpg" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <!--FIM slide carousel-->
+
+                <!--INÍCIO controle previous e next-->
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel-banner-home" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel-banner-home" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!--FIM controle previous e next-->
+
+                <!--INÍCIO indicadores banner para navegação-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-banner-home" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-banner-home" data-bs-slide-to="2"></button>
+                </div>   
+                <!--FIM indicadores banner para navegação-->
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+                <section id="sobre">
+                        <h2>Sobre a loja</h2>
+                        <p>
+                            Bem-vindos à Start Tennis Pro Shop, se você é um entusiasta do tênis ou um jogador apaixonado em busca dos melhores equipamentos, você chegou ao lugar certo. Nossa loja virtual é o destino definitivo para tudo relacionado ao tênis, oferecendo uma ampla variedade de artigos de alta qualidade para atender às suas necessidades nas quadras.
+                        </p>
+                        <p>
+                            Raquetes de desempenho superior, calçados especializados, roupas técnicas e confortáveis, acessórios essenciais, pensamos em tudo para você. 
+                        </p>
+                        <p>
+                            Acreditamos que o equipamento certo pode elevar o seu jogo para o próximo nível. Nossa paixão pelo tênis nos impulsiona a oferecer produtos de qualidade que atendam às suas expectativas e necessidades. Navegue pela nossa coleção, faça suas escolhas e prepare-se para dominar a quadra com confiança. Estamos aqui para ajudá-lo a alcançar o sucesso no tênis!
+                        </p>
+                        <img class="d-block w-100" src="./imagens/loja.png" alt="Loja">
+                </section>
+                <section id="blog">
+                        <h2>Blog</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <article class="card">
+                                        <div class="card-header">
+                                            Melhore seu jogo
+                                        </div>
+                                        <img src="./imagens/imagem_blog_1.jpg" alt="Foto Nadal">
+                                        <div class="card-body">
+                                            <h4 class="card-title">5 dicas para manter o foco</h4>
+                                            <p class="card-text"> 
+                                                O fator psicológico sempre teve destaque nas pautas sobre tênis. Um tenista capaz de manter o foco e a concentração durante longas partidas pode obter resultados melhores e ingressar no grupo de elite do tênis...
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Leia mais...</a>
+                                        </div>
+                                        <footer class="card-footer">
+                                            Postado em <time>26/09/2023 às 10h30</time>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <article class="card">
+                                        <div class="card-header">
+                                            Sobre o tênis
+                                        </div>
+                                        <img src="./imagens/imagem_blog_2.jpg" alt="Imagem dois tenistas">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Nova geração de tenistas</h4>
+                                            <p class="card-text">
+                                                A Rússia sempre foi reconhecida como uma potência do tênis, tendo conquistado dois títulos da Copa Davis e outros quatro na Fed Cup. O tênis russo revelou nomes como: Yevegny Kafelnikov, ex-número 1 do mundo...
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Leia mais...</a>
+                                        </div>
+                                        <footer class="card-footer">
+                                            Postado em <time>03/10/2023 às 10h30</time>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <article class="card">
+                                        <div class="card-header">
+                                            Para jogadores
+                                        </div>
+                                        <img src="./imagens/imagem_blog_3.jpg" alt="imagem tenista">
+                                        <div class="card-body">
+                                            <h4 class="card-title">O lado psicológico do tênis</h4>
+                                            <p class="card-text">
+                                                Em qualquer esporte, o sucesso ou o fracasso de um atleta resulta de uma combinação de capacidades físicas e mentais. O tênis é um dos esportes que mais gera tensão pelo número individual de jogadas que necessitam...
+                                            </p>
+                                            <a href="#" class="btn btn-dark">Lei mais...</a>
+                                        </div>
+                                        <footer class="card-footer">
+                                            Postado em <time>10/10/2023 às 10h30</time>
+                                        </footer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>                
+                </section>
+                <section id="contato">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <h2>Entre em contato</h2>
+                                <form>
+                                    <div class="form-campo">
+                                        <label class="for-label" for="name">Seu nome:</label>
+                                        <input class="form-control" type="text" id="nome" name="nome"/>
+                                    </div>
+                                    <div class="form-campo">
+                                        <label class="for-label" for="email">Seu e-mail:</label>
+                                        <input class="form-control" type="email" id="email" name="email"/>
+                                    </div>
+                                    <div class="form-campo">
+                                        <label class="for-label" for="telefone">Telefone:</label>
+                                        <input class="form-control" type="tel" id="telefone" name="telefone"/>
+                                    </div>
+                                    <div class="form-campo">
+                                        <label class="for-label" for="mensagem">Sua mensagem:</label>
+                                        <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label" for="aceitoTermos">Li e concordo com os termos do site</label>  
+                                        <input class="form-check-input" type="checkbox" id="aceitoTermos" name="aceitoTermos"/>
+                                    </div>
+                                    <button class="btn btn-success">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <p>
+                            2023 &copy; Start Tennis Pro Shop - Todos os direitos reservados
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center">
+                        <ul class="container-flex icones">
+                            <li>
+                                <a href="#">
+                                    <img src="./icones/facebook.png" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./icones/instagram.png" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./icones/youtube.png" alt="Youtube">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+    </footer>
+    
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/messages_pt_BR.min.js"></script>
+        <script src="./main.js"></script> 
+</body>
+
+</html>
+
